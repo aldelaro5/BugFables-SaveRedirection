@@ -6,6 +6,10 @@ If this is not done already, you first need to install the BepInEx loader into t
 
 Once this is done, [download the latest version of the plugin](https://github.com/aldelaro5/BugFables-SaveRedirection/releases) and unzip it into `BepInEx/plugins` from the game's directory. You should unzip it so the folder `Speedrun-Practice` with all the files from the zip appears ***directly*** under the `plugins` folder.
 
+Next, the folder of BepInEx can be redirected to any folder available as long as you have read and write permission to the new location. To do so, open the file `doorstop_config.ini` and change the line `targetAssembly=BepInEx\core\BepInEx.Preloader.dll` so that it points to the same DLL in the BepInEx folder, but at the new location. For example, if you want to redirect to `C:\Users\aldelaro5\Documents\bf save redirected`, then the line should be `targetAssembly=C:\Users\aldelaro5\Documents\bf save redirected\BepInEx\core\BepInEx.Preloader.dll`. Finally, move the BepInEx folder from the game directory to the new location you specified.
+
+The save files and the setting file will now be redirected to `C:\Users\aldelaro5\Documents\bf save redirected\BepInEx`.
+
 ## Uninstallation instruction
 To uninstall the plugin, simply delete the `BepInEx/plugins/Speedrun-Practice` folder from the game's directory. 
 
